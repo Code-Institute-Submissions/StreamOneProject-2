@@ -1,0 +1,21 @@
+{
+  "name": "streamoneproject",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/sbarrypatt/StreamOneProject",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "angular": "^1.7.2",
+    "angular-route": "^1.7.2",
+    "karma": "^0.4.6",
+    "protractor": "^5.4.0"
+  }
+}
