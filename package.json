@@ -1,0 +1,19 @@
+{
+  "name": "streamoneproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbarrypatt/StreamOneProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbarrypatt/StreamOneProject/issues"
+  },
+  "homepage": "https://github.com/sbarrypatt/StreamOneProject#readme"
+}
