@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app='TPBfanpage'>
+	<head>
+		<base href="/"> <!-- needed for Angular HTML 5 mode -->
+		<title>Trailer Park Boys Fan Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="bower_components/glyphicons/styles/glyphicons.css">
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+	</head>
+
+
+	<body class="navbarPadding siteBackground"> 
+		
+		<nav class="navbar fixed-top bg-dark">
+
+			<a class="navbar-brand" href="/"><img src="images/TPBlogo.png" alt="Trailer Park Boys Logo"
+				class="TPBlogo"></a>  <!-- Logo image taken from www.trailerparkboys.com -->
+
+		
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link TPBnavbar" href="/trivia">Trivia</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link TPBnavbar" href="/tours">Upcoming Tours</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link TPBnavbar" href="/fanMail">Fan Mail</a>
+				</li>
+			</ul>
+
+		</nav>
+		
+
+		<div ng-view>
+
+		</div>
+
+
+
+		<script src="js/app.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/service.js"></script>
+		<script src="js/directive.js"></script>
+	</body>
+
+</html>
