@@ -2,21 +2,49 @@
 HomePage for TPB Fan Page
 -->
 
+<!-- Overrides link default style -->
+<style>
+	div, a:hover {
+
+		text-decoration: none;
+	}
+
+	@media screen and (max-width: 1560px) {
+		iframe {
+			display: none;
+		} 
+	}
+</style>
 
 
-	<!-- Use flexbox to center and align title & nav elements-->
-	<div class="d-flex justify-content-center">
-		<span class="homepageTitle">{{title}}</span>
+<!-- Use flexbox to center and align title & nav elements-->
+<div class="d-flex justify-content-center">
+	<span class="homepageTitle">{{title}}</span>
+</div>
+
+<div class="d-flex flex-column justify-content-center align-items-center">
+		<a class="homepageTitle HPlinks" href="/trivia">Trivia</a>
+		<a class="homepageTitle HPlinks" href="/tours">Upcoming Tours</a>
+		<a class="homepageTitle HPlinks" href="/fanMail">Fan Mail</a>
+</div>
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/a-9vuhaKDxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video1Position"></iframe>
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/eQc-ldoX3yI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video2Position"></iframe>
+
+<footer>
+	<div class="footerPadding HPlinks">
+		<div class="d-flex justify-content-center">Follow The Boys</div>
+		<div class="d-flex flex-row justify-content-center">
+	<!--	Facebook link -->
+			<div class="iconPadding"><a href="https://www.facebook.com/trailerparkboys/">
+				<img src="social-media-logos/png/036-facebook.png" alt="facebook" width="90px" height="90px"></a></div>
+	<!--	Twitter link -->
+			<div class="iconPadding"><a href="https://twitter.com/trailerparkboys">
+				<img src="social-media-logos/png/008-twitter.png" alt="twitter" width="90px" height="90px"></a></div>
+	<!--	Instagram link -->
+			<div class="iconPadding"><a href="https://www.instagram.com/trailerparkboysofficial">
+				<img src="social-media-logos/png/029-instagram.png" alt="instagram" width="90px" height="90px"></a></div>
+		</div>
 	</div>
-
-	<div class="d-flex flex-column justify-content-center align-items-center">
-		<span class="homepageTitle" id="HPbuttons">Trivia</span>
-		<span class="homepageTitle" id="HPbuttons">Upcoming Tours</span>
-		<span class="homepageTitle" id="HPbuttons">Fan Mail</span>
-	</div>
-
-
-<footer class=d-flex >
-	
-
 </footer>
