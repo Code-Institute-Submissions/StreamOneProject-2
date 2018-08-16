@@ -1,29 +1,39 @@
-/*CSS style sheet for Trailer Park Boys Fane Page*/
+/*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+CSS style sheet for Trailer Park Boys Fane Page
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
 
 /*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Global Settings
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 * {	/* Sets font settings for whole website*/
-	color: rgb(214, 29, 29) !important;
-	font-family: Impact, Charcoal, sans-serif !important;
-	font-style: italic !important;
-	text-align: center !important;
-	text-shadow: 0px 2px white, 2px 0px white, 0px -2px white, -2px 0px white;
+	color: rgb(214, 29, 29);
+	font-family: Impact, Charcoal, sans-serif;
+	font-style: italic;
+	/*text-shadow: 0px 2px white, 2px 0px white, 0px -2px white, -2px 0px white;*/
 }
 
+
 /*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 NAVBAR and BACKGROUND STYLING
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */ 
 
 html {
 
 	/* Sets base height for background image */
 	height: 100%;
+
 }
 
 .siteBackground { /* Background image taken from Youtube (https://www.youtube.com/watch?v=1bhC0cbmre4) screenshot of opening credits */
 
-	background: white url("images/TPBbackground.png") no-repeat scroll center;
+	background: white url("images/TPBbackground.png") repeat-y scroll center;
 
 	/* Set background to same size as desktop */
 	background-size: 100%;
@@ -31,45 +41,163 @@ html {
 }
 .navbarPadding { /* Sets padding from Navbar*/
 
+	padding-bottom: 50px;
 	padding-top: 70px;
 }
 
 .TPBlogo { 	/*Changes image properties for top left logo on navbar*/ 
 
-	width: 200px;
+	width: 300px;
 }
 
 .TPBnavbar { /*Styling for nav items in top right navbar*/
 
-	color: FloralWhite;
-	font-size: 20px;
+	color: rgb(214, 29, 29); /*Red similar to trailer park boys logo*/
+	font-size: 30px;
 }
 
 
 /*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 HOMEPAGE STYLING
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 
 .homepageTitle { /*Positioning and styling of Home.html title*/
 
 	/*font settings*/
-	font-size: 45px;
+	font-size: 55px;
 
 	/*container background*/
 	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	width: 900px;
-	border: 4px solid FloralWhite;
+	width: 1000px;
+	border: 2px solid FloralWhite;
 	border-radius: 10px;
 	padding: 10px;
-	margin-top: 30px;
+	margin-top: 40px;
+	text-align: center;
 }
 
-#HPbuttons { /* Homepage button styling*/
+.HPlinks { /* Homepage links styling*/
 
 	/*font for nav elements on home page*/
-	font-size: 35px;
+	font-size: 45px;
 	margin-top: 40px;
 	width: 600px;
+	text-align: center;
 
+	/* Overrides default link value*/
+	color: rgb(214, 29, 29); /*Red similar to trailer park boys logo*/
+}
+
+.footerPadding { /* Padding for social media icons*/
+
+	padding-top: 20px;
+	padding-left: 60px;
+}
+
+.iconPadding {  /* Padding for social media icons*/
+
+	padding: 0px 30px;
+}
+
+#video1Position { /*sets position of left side video*/
+
+	position: absolute;
+	left: 25px;
+	top: 275px;
+
+}
+
+#video2Position { /*sets position of left side video*/
+
+	position: absolute;
+	right: 25px;
+	top: 275px;
+
+}
+
+/*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+UPCOMING TOURS STYLING
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
+.toursTitle { /*Positioning and styling of Home.html title*/
+
+	/*font settings*/
+	font-size: 35px;
+
+	/*container background*/
+	background-color: #343a40; /*color taken from inspecting bootstrap css*/
+	width: 1000px;
+	border: 2px solid FloralWhite;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+
+
+
+/*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+FAN MAIL STYLING
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
+.fanmailBackground { /* Sets font and background settings for fan mail Title*/
+
+	font-size: 30px;
+
+	/*most settings copied from homepageTitle*/
+	background-color: #343a40; /*color taken from inspecting bootstrap css*/
+	border: 2px solid FloralWhite;
+	border-radius: 10px;
+	padding: 10px;
+	width: 800px;
+}
+
+.formPadding {	/* Sets padding between inputs on form*/
+
+	padding-top: 15px;
+}
+
+.fanmailFont {	/*Sets font size for fan mail Labels*/
+
+	color: floralwhite;
+	font-size: 20px;
+	font-family: Arial;
+	font-style: none;
+	text-shadow: none;
+}
+
+.fanmailBox { /* Sets background settings for fan mail Labels*/
+
+	/*most settings copied from homepageTitle*/
+	background-color: #343a40; /*color taken from inspecting bootstrap css*/
+	border: 2px solid FloralWhite;
+	border-radius: 10px;
+	padding: 10px;
+
+	/* sets background box size*/
+	width: 100px;
+	height: 35px;
+}
+
+.submitColor { /* sets background color for submit button*/
+
+	background-color: rgb(214, 29, 29);
+}
+
+.dropdownFont { /* Changes text style in dropdown and placeholders*/
+
+	color: black;
+	font-size: 20px;
+	font-family: Arial;
+	font-style: none;
+	text-shadow: none;
 }
 

@@ -1,0 +1,54 @@
+<!-- 
+Fan Mail page for TPB Fan Page
+-->
+
+<div class="container">
+	<div class="d-flex justify-content-center navbarPadding">
+		<div class="fanmailBackground d-flex justify-content-center">
+			Have &nbsp something &nbsp you &nbsp want &nbsp to &nbsp say &nbsp to &nbsp the &nbsp boys?
+			<Br>
+			Fill &nbsp out &nbsp the &nbsp form &nbsp below &nbsp and &nbsp let &nbsp them &nbsp know!
+			</Br>
+		</div>
+	</div>
+
+	<form>	<!-- bootstrap form and input classes to structure form-->
+
+		 <!-- Input for Name -->
+		<div class="form-inline formPadding">
+			<label for="name" class="fanmailBox fanmailFont">Name:</label>
+			<input type="text" class="dropdownFont" autofocus placeholder="Name" class="form-control" id="name" name="name" required>
+		</div>
+
+		 <!-- Input for Email -->
+		<div class="form-inline formPadding">
+			<label for="email" class="fanmailBox fanmailFont">Email:</label>
+			<input type="email" class="dropdownFont" placeholder="Email" class="form-control" id="email" name="email" required>
+		</div>
+
+		<!-- Input for Addressee-->
+		<div class="form-inline formPadding"> 
+			<label for="toWho" class="fanmailBox fanmailFont">To:</label>
+			<select class="form-control dropdownFont" id="toWho" name="toWho" required>
+				<option class="dropdownFont" value="ricky" selected>Ricky</option>
+				<option class="dropdownFont" value="julian">Julian</option>
+				<option class="dropdownFont" value="bubbles">Bubbles</option>
+				<option class="dropdownFont" value="corey">Corey</option>
+				<option class="dropdownFont" value="trevor">Trevor</option>
+				<option class="dropdownFont" value="jacob">Jacob</option>cd desktoi
+				<option class="dropdownFont" value="jimlahey">Jim Lahey</option>
+				<option class="dropdownFont" value="randy">Randy</option>
+				<option class="dropdownFont" value="sarah">Sarah</option>
+				<option class="dropdownFont" value="trinity">Trinity</option>
+			</select>
+		</div>
+
+		<!-- Input for message block-->
+		<div class="form-inline formPadding"> 
+			<label for="message" class="fanmailBox fanmailFont">Message:</label>
+			<textarea placeholder="Enter Message" class="form-control dropdownFont" rows="10" cols="200" id="message" name="message" required></textarea>
+		</div>
+
+		<button type="submit" class="btn btn-lg mb-2 fanmailFont submitColor">Submit</button>
+	</form>
+</div>
