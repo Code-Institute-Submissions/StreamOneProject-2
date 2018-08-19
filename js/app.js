@@ -1,4 +1,4 @@
-angular.module('TPBfanpage', ['ngRoute', 'RouteControllers', 'angular-storage']);
+angular.module('TPBfanpage', ['ngRoute', 'RouteControllers']);
 
 angular.module('TPBfanpage').config(function($locationProvider, $routeProvider){
 	$locationProvider.html5Mode(true);  //Enable href routing w/o hashes
