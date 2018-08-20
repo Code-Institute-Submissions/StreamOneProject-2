@@ -4,6 +4,13 @@ HomePage for TPB Fan Page
 
 <!-- Overrides link default style -->
 <style>
+
+	div span {
+
+		margin-bottom: 60px;
+		font-size: 45px !important; 
+	}
+
 	div a:hover {
 		text-decoration: none;
 	}
@@ -18,13 +25,15 @@ HomePage for TPB Fan Page
 
 <!-- Use flexbox to center and align title & nav elements-->
 <div class="d-flex justify-content-center">
-	<span class="homepageTitle">{{title}}</span>
+	<span class="TPBbackground">{{title}}</span>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
-		<a class="homepageTitle HPlinks" href="/trivia">Trivia</a>
-		<a class="homepageTitle HPlinks" href="/tours">Upcoming Tours</a>
-		<a class="homepageTitle HPlinks" href="/fanMail">Fan Mail</a>
+<div class="d-flex justify-content-center">
+	<div class="d-flex flex-column">
+			<a class="homeLinks d-flex align-items-center justify-content-center" href="/trivia">Trivia</a>
+			<a class="homeLinks d-flex align-items-center justify-content-center" href="/tours">Upcoming Tours</a>
+			<a class="homeLinks d-flex align-items-center justify-content-center" href="/fanMail">Fan Mail</a>
+	</div>
 </div>
 
 <iframe width="500" height="315" src="https://www.youtube.com/embed/a-9vuhaKDxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video1Position"></iframe>
@@ -32,17 +41,18 @@ HomePage for TPB Fan Page
 <iframe width="500" height="315" src="https://www.youtube.com/embed/eQc-ldoX3yI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video2Position"></iframe>
 
 <footer>
-	<div class="footerPadding HPlinks">
-		<div class="d-flex justify-content-center">Follow The Boys</div>
+	<div class="footerPadding footerBackground">
+		<div class="d-flex justify-content-center">Follow The Boys!</div>
+
 		<div class="d-flex flex-row justify-content-center">
 	<!--	Facebook link -->
-			<div class="iconPadding"><a href="https://www.facebook.com/trailerparkboys/">
+			<div class="iconPadding"><a href="https://www.facebook.com/trailerparkboys/"  target="_blank">
 				<img src="social-media-logos/png/036-facebook.png" alt="facebook" width="90px" height="90px"></a></div>
 	<!--	Twitter link -->
-			<div class="iconPadding"><a href="https://twitter.com/trailerparkboys">
+			<div class="iconPadding"><a href="https://twitter.com/trailerparkboys"  target="_blank">
 				<img src="social-media-logos/png/008-twitter.png" alt="twitter" width="90px" height="90px"></a></div>
 	<!--	Instagram link -->
-			<div class="iconPadding"><a href="https://www.instagram.com/trailerparkboysofficial">
+			<div class="iconPadding"><a href="https://www.instagram.com/trailerparkboysofficial" target="_blank">
 				<img src="social-media-logos/png/029-instagram.png" alt="instagram" width="90px" height="90px"></a></div>
 		</div>
 	</div>

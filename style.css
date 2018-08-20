@@ -7,16 +7,20 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-Global Settings
+Global Settings and classes
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 * {	/* Sets font settings for whole website*/
-	color: rgb(214, 29, 29);
-	font-family: Impact, Charcoal, sans-serif;
-	font-style: italic;
-	text-shadow: 0px 1px white, 1px 0px white, 0px -1px white, -1px 0px white;
+	color: rgb(214, 29, 29); /* color taken by comparing TPBlogo.png to color scale */
+	font-family: Impact, Charcoal, sans-serif;  /*traditional font used by TPB*/
+	font-style: italic;	/*style in line with traditional TPB*/
+	text-shadow: 0px 1px white, 1px 0px white, 0px -1px white, -1px 0px white; /*adds background effect similar to TPBboys logo*/
 }
 
+.topPadding {	/* Sets padding between inputs on form*/
+
+	padding-top: 15px;
+}
 
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -24,7 +28,7 @@ NAVBAR and BACKGROUND STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */ 
 
-html {
+html, body {
 
 	/* Sets base height for background image */
 	height: 100%;
@@ -41,8 +45,7 @@ html {
 }
 .navbarPadding { /* Sets padding from Navbar*/
 
-	padding-bottom: 50px;
-	padding-top: 70px;
+	padding: 70px 0 50px 0;
 }
 
 .TPBlogo { 	/*Changes image properties for top left logo on navbar*/ 
@@ -56,6 +59,20 @@ html {
 	font-size: 30px;
 }
 
+.TPBbackground { /*Positioning and styling of Home.html title*/
+
+	font-size: 35px;
+	text-align: center;
+
+	/*container background*/
+	background-color: #343a40; /*color taken from inspecting bootstrap css*/
+	width: 1000px;
+	border: 2px solid FloralWhite;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 40px 0 10px 0;
+
+}
 
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -63,42 +80,46 @@ HOMEPAGE STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 
-.homepageTitle { /*Positioning and styling of Home.html title*/
+.homeLinks {	/*overrides default sites font size and background*/
 
 	/*font settings*/
-	font-size: 55px;
+	font-size: 35px;
+	color: rgb(214, 29, 29); /* color taken by comparing TPBlogo.png to color scale */
 
 	/*container background*/
 	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	width: 1000px;
+	width: 600px;
+	height: 80px;
 	border: 2px solid FloralWhite;
 	border-radius: 10px;
 	padding: 10px;
-	margin-top: 40px;
-	text-align: center;
-}
-
-.HPlinks { /* Homepage links styling*/
-
-	/*font for nav elements on home page*/
-	font-size: 45px;
-	margin-top: 40px;
-	width: 600px;
-	text-align: center;
-
-	/* Overrides default link value*/
-	color: rgb(214, 29, 29); /*Red similar to trailer park boys logo*/
+	margin: 45px 0 10px 0;
 }
 
 .footerPadding { /* Padding for social media icons*/
 
-	padding-top: 20px;
-	padding-left: 60px;
+	margin: 20px 0 0 60px;
+}
+
+.footerBackground { /*creates smaller background and font for footer title*/
+		/*font settings*/
+	font-size: 24px;
+	color: rgb(214, 29, 29); /* color taken by comparing TPBlogo.png to color scale */
+
+	/*container background*/
+	background-color: #343a40; /*color taken from inspecting bootstrap css*/
+	width: 250px;
+	height: 60px;
+	border: 2px solid FloralWhite;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 30px 0 0 200px;
 }
 
 .iconPadding {  /* Padding for social media icons*/
 
-	padding: 0px 30px;
+	margin-top: 20px;
+	padding: 0 30px;
 }
 
 #video1Position { /*sets position of left side video*/
@@ -106,7 +127,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 	position: absolute;
 	left: 25px;
 	top: 275px;
-
 }
 
 #video2Position { /*sets position of left side video*/
@@ -114,30 +134,16 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 	position: absolute;
 	right: 25px;
 	top: 275px;
-
 }
+
+
+
 
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-UPCOMING TOURS STYLING
+TRIVIA STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
-
-.toursTitle { /*Positioning and styling of Home.html title*/
-
-	/*font settings*/
-	font-size: 35px;
-
-	/*container background*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	width: 1000px;
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-	margin-top: 40px;
-	text-align: center;
-	margin-bottom: 60px;
-}
 
 
 
@@ -147,24 +153,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 FAN MAIL STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
-
-.mailBackground { /* Sets font and background settings for fan mail Title*/
-
-	font-size: 30px;
-	text-align: center;
-
-	/*most settings copied from homepageTitle*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-	width: 900px;
-}
-
-.formPadding {	/* Sets padding between inputs on form*/
-
-	padding-top: 15px;
-}
 
 .fanmailFont {	/*Sets font size for fan mail Labels*/
 

@@ -15,4 +15,8 @@ angular.module('RouteControllers', [])
 			}
 		}
 		
+	})
+
+	.controller('TriviaController', function($scope){
+
 	});
