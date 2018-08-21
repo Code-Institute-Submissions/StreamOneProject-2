@@ -1,3 +1,5 @@
+// Directives used to separate questions and answers on the trivia page
+
 angular.module('TriviaDirective', [])
 	.directive('triviaOne', function() {
 		return{

@@ -12,8 +12,7 @@ angular.module('TPBfanpage').config(function($locationProvider, $routeProvider){
 		controller: 'TriviaController'
 	})
 	.when('/tours', {
-		templateUrl: 'templates/tours.html',
-		controller: 'ToursController'
+		templateUrl: 'templates/tours.html'
 	})
 	.when('/fanMail', {
 		templateUrl: 'templates/fanMail.html',
