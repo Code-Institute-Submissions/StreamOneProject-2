@@ -2,12 +2,17 @@
 Trivia page for TPB Fan Page
 -->
 
-<div class="container">
-	<div class="d-flex align-items-center">
-		<div class="">
-			<div class="TPBbackground">
-				Click here to begin the Trailer Park Boys Trivia Challenge!
-			</div>
+<div class="container"  id="triviaOpening">
+	<div class="d-flex justify-content-center">
+		<div class="TPBbackground centerTitle" ng-click="launchTrivia()">
+			Click here to begin the Trailer Park Boys Trivia Challenge!
 		</div>
 	</div>
 </div>
+
+<div class="container" id="triviaContent">{{count}}
+	<trivia-One id="T1"></trivia-One>
+	<trivia-Two id="T2"></trivia-Two>
+</div>
+
+

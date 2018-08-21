@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center">
+	<!-- passes through title from scope object-->
+	<div class="TPBbackground">
+		{{QnA[0]}}
+	</div>
+</div>
+
+<div class="d-flex justify-content-center">
+		<!-- radio buttons used to answer question filled with info from scope object -->
+	<div class="d-flex flex-column align-items-start questionBackground">
+
+		<!--First option -->
+		<div class="form-check">
+			<label class="form-check-label radioStyle">
+				<input type="radio" class="form-check-input" name="question" id="A1" checked required>{{Answers[0].answer}}
+			</label>
+		</div>
+
+		<!--Second option -->
+		<div class="form-check">
+			<label class="form-check-label radioStyle">
+				<input type="radio" class="form-check-input" name="question">{{Answers[0].wrong1}}
+			</label>
+		</div>
+
+		<!--Third option -->
+		<div class="form-check">
+			<label class="form-check-label radioStyle">
+				<input type="radio" class="form-check-input" name="question">{{Answers[0].wrong2}}
+			</label>
+		</div>
+
+		<!--Fourth option -->
+		<div class="form-check">
+			<label class="form-check-label radioStyle">
+				<input type="radio" class="form-check-input" name="question">{{Answers[0].wrong3}}
+			</label>
+		</div>
+
+		<div>
+			<button type="button" class="btn btn-md mb-2 labelStyling topPadding" ng-click="nextQuestion().counter()">Submit</button>
+		</div>
+
+	</div>
+</div>

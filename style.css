@@ -19,7 +19,17 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 .topPadding {	/* Sets padding between inputs on form*/
 
-	padding-top: 15px;
+	margin-top: 15px;
+}
+
+.labelStyling {	/*Sets font settings for fan mail Labels*/
+
+	color: floralwhite;
+	font-size: 20px;
+	font-family: Arial;
+	font-style: none;
+	text-shadow: none;
+	background-color: rgb(214, 29, 29); /*Color matched from TPB logo*/
 }
 
 /*
@@ -43,6 +53,7 @@ html, body {
 	background-size: 100%;
 
 }
+
 .navbarPadding { /* Sets padding from Navbar*/
 
 	padding: 70px 0 50px 0;
@@ -145,7 +156,52 @@ TRIVIA STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 
+.centerTitle {
+	margin-top: 20%;
+}
 
+.questionBackground {
+
+	/*most settings copied from homepageTitle*/
+	background-color: #343a40; /*color taken from inspecting bootstrap css*/
+	border: 2px solid FloralWhite;
+	border-radius: 10px;
+	padding: 10px 0 0 40px;
+	margin-top: 70px;
+
+	/* sets background box size*/
+	width: 800px;
+	height: 300px;
+}
+
+.radioStyle {
+
+	/*sets font size and takes away shadow for options*/
+	font-size: 22px;
+	text-shadow: none;
+	font-style: normal;
+
+	/*separates options a little*/
+	margin: 20px 0px 40px 30px;
+
+}
+
+/*trivia ID's used to navigate through the trivia questionnaire*/
+#triviaOpening {
+	display: initial;
+}
+
+#triviaContent {
+	display: none;
+}
+
+#T1 {
+	display: initial;
+}
+
+#T2 {
+	display: none;
+}
 
 
 /*
@@ -154,14 +210,6 @@ FAN MAIL STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 
-.fanmailFont {	/*Sets font size for fan mail Labels*/
-
-	color: floralwhite;
-	font-size: 20px;
-	font-family: Arial;
-	font-style: none;
-	text-shadow: none;
-}
 
 .fanmailBox { /* Sets background settings for fan mail Labels*/
 
@@ -176,10 +224,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 	height: 35px;
 }
 
-.submitColor { /* sets background color for submit button*/
-
-	background-color: rgb(214, 29, 29); /*Color matched from TPB logo*/
-}
 
 .dropdownFont { /* Changes text style in dropdown and placeholders*/
 
@@ -189,4 +233,3 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 	font-style: none;
 	text-shadow: none;
 }
-
