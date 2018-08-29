@@ -1,0 +1,35 @@
+<!--Creates a multiple choice template for the answers using bootstrap-->
+
+
+<form>
+	<div class="form-check">
+		<label class="form-check-label radioStyle">
+			<input type="radio" class="form-check-input" name="answer" ng-click="trackAnswers()" id="ans1"
+			value="{{QA.answers[count][answerArray[0]].isCorrect}}" 
+			>{{QA.answers[count][answerArray[0]].ans}}
+		</label>
+	</div>
+	<div class="form-check">
+		<label class="form-check-label radioStyle">
+			<input type="radio" class="form-check-input" name="answer" ng-click="trackAnswers()" id="ans2"
+			value="{{QA.answers[count][answerArray[1]].isCorrect}}">
+			{{QA.answers[count][answerArray[1]].ans}}
+		</label>
+	</div>
+
+	<div class="form-check">
+		<label class="form-check-label radioStyle">
+			<input type="radio" class="form-check-input" name="answer" ng-click="trackAnswers()" id="ans3"
+			value="{{QA.answers[count][answerArray[2]].isCorrect}}">
+			{{QA.answers[count][answerArray[2]].ans}}
+		</label>
+	</div>
+
+	<div class="form-check">
+		<label class="form-check-label radioStyle">
+			<input type="radio" class="form-check-input" name="answer" ng-click="trackAnswers()" id="ans4"
+			value="{{QA.answers[count][answerArray[3]].isCorrect}}">
+			{{QA.answers[count][answerArray[3]].ans}}
+		</label>
+	</div>
+</form>

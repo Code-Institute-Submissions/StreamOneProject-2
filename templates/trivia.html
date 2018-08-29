@@ -2,7 +2,8 @@
 Trivia page for TPB Fan Page
 -->
 
-<div class="container"  id="triviaOpening">
+<!-- template for title to initiate the game-->
+<div class="container" ng-hide="isTitleTrue">
 	<div class="d-flex justify-content-center">
 		<div class="TPBbackground centerTitle" ng-click="launchTrivia()">
 			Click here to begin the Trailer Park Boys Trivia Challenge!
@@ -10,9 +11,40 @@ Trivia page for TPB Fan Page
 	</div>
 </div>
 
-<div class="container" id="triviaContent">{{count}}
-	<trivia-One id="T1"></trivia-One>
-	<trivia-Two id="T2"></trivia-Two>
+<!-- template for the score screen when the game finishes-->
+<div class="container" ng-show="isScoreTrue">
+	<div class="d-flex justify-content-center">
+		<div class="TPBbackground centerTitle">
+			<span>Your Score is {{answerCount}}/10!</span>
+			<span ng-click="restartGame()">Click Here to restart the Game!</span>
+		</div>
+	</div>
+</div>
+
+<!-- template for when the game is initiated -->
+<div class="container" ng-show="isGameTrue">
+
+	<div class="d-flex justify-content-center">
+	<!-- passes through question from controller-->
+		<div class="TPBbackground">
+			{{QA.questions[count]}}
+		</div>
+	</div>
+
+
+	<div class="d-flex justify-content-center">
+	<!-- sets background for questions -->
+		<div class="d-flex flex-column align-items-start questionBackground">
+
+			<!-- calls on the directive which links the template for trivia answers -->
+			<trivia-Answer></trivia-Answer>
+
+			<div>
+				<button type="button" class="btn btn-md mb-2 labelStyling topPadding" id="submit" ng-click="nextQuestion()">Submit</button>
+			</div>
+
+		</div>
+	</div>
 </div>
 
 
