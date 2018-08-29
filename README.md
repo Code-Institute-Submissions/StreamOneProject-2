@@ -19,11 +19,11 @@ This page uses Angular JS framework to construct DOM. Controllers used to store 
 ### Existing Features
 - Send fan mail (no backend implemented)
 - Check upcoming tours and follow link to buy tickets
-
+- Interactive multiple choice trivia
 
 ### Features Left to Implement
-- Interactive multiple choice trivia
 - Animations to make things look prettier
+- Mobile accessibility
  
 ## Tech Used
 

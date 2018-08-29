@@ -1,15 +1,9 @@
-// Directives used to separate questions and answers on the trivia page
+// Directive used to iterate questions using ng-repeat
 
 angular.module('TriviaDirective', [])
-	.directive('triviaOne', function() {
+	.directive('triviaAnswer', function() {
 		return{
 			restrict: 'E',
-			templateUrl: 'templates/directives/trivia1.html'
-		}		
-	})
-	.directive('triviaTwo', function() {
-		return{
-			restrict: 'E',
-			templateUrl: 'templates/directives/trivia2.html'
-		}		
+			templateUrl: 'templates/directives/answerChoices.html'
+		}	
 	});
