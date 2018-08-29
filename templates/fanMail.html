@@ -30,7 +30,7 @@ Fan Mail page for TPB Fan Page
 			<label for="toWho" class="fanmailBox labelStyling">To:</label>	
 			<!-- Select menu made using angular directive ng-options-->
 			<select class="form-control dropdownFont leftPadding" id="toWho" name="toWho" 
-				ng-init="tpbName = names[0]" ng-model="tpbName" ng-options="name for name in names" required></select>
+				ng-init="tpbName = names[0]" data-ng-model="tpbName" ng-options="name for name in names" required></select>
 		</div>
 
 		<!-- Input for message block-->
@@ -41,7 +41,7 @@ Fan Mail page for TPB Fan Page
 
 		<button type="submit" class="btn btn-lg mb-2 labelStyling topPadding" ng-click="launchModal()">Submit</button>
 
-<!-- Alerts /w bootstrap modal that the chosen TPB has recieved their message // no link to external server -->
+		<!-- Alerts /w bootstrap modal that the chosen TPB has recieved their message // no link to external server -->
 		<div id="tpbModal" class="modal fade" role="dialog">
 		  <div class="modal-dialog modal-dialog-centered modal-sm">
 

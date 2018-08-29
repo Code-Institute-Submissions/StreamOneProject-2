@@ -1,10 +1,12 @@
 angular.module('RouteControllers', [])
+
+	//CONTROLLER FOR HOME PAGE //
 	.controller('HomeController', function($scope){
 		// not necessary, but used initally getting a handle on how to use controllers //
 		$scope.title = "Welcome to the Trailer Park Boys Fan Page";
 	})
 
-
+	// CONTROLLER FOR MAIL PAGE //
 	.controller('MailController', function($scope){
 		// list of options to choose from of addressees in fan mail page //
 		$scope.names = ['Ricky', 'Julian', 'Bubbles', 'Corey', 'Trevor', 'Jacob', 'Jim Lahey', 'Randy', 'Sarah', 'Trinity', 'Lucy'];
@@ -14,69 +16,86 @@ angular.module('RouteControllers', [])
 			if($("#nameInput").val() !="" && $("#emailInput").val().includes('@' && '.') && $("#messageInput").val() !="") {
 				$("#tpbModal").modal('show');
 			}
-		}	
+		}
 	})
 
+	// CONTROLLER FOR TRIVIA PAGE //
 	.controller('TriviaController', function($scope, randomizer){
 
-		//checks game-state and shows accordingly
+		// checks game-state and shows accordingly
 		$scope.isGameTrue = false;
 		$scope.isTitleTrue = false;
 		$scope.isScoreTrue = false;
 
+		// changes based on which answer is chosen / stores correct/incorrect answer //
 		$scope.isChecked = false;
 		
+		// counters used to determine which question should be displayed and how many answers the user gets correct //
 		$scope.count = 0;
 		$scope.answerCount = 0;
 
+		// a template array that will get a random order of new array below it //
 		$scope.answerArray = [];
 		var newArray = [0, 1, 2, 3];
 
+		// function executes when user clicks to start trivia game //
 		$scope.launchTrivia = function(){
 
+			// initiates trivia game html //
 			$scope.isGameTrue = true;
 			$scope.isTitleTrue = true;
+
+			// initiates first random array so answers always display in a different order //
 			newArray = randomizer.randomArray(newArray);
 			$scope.answerArray = newArray;
 		}
 
+		// function executes every time a user clicks a radio button on trivia game //
 		$scope.trackAnswers = function(){
+
+			// changes the value to false or true depending on which answer is correct //
 			$scope.isChecked = $('input:checked').val();
-			console.log($scope.isChecked);
 		}
 
+		// function executes every time the submit button is clicked //
 		$scope.nextQuestion = function(){
 			
+			// uses Jquery to check to see if a radio button option has been clicked //
 			if ($('#ans1').prop('checked') || $('#ans2').prop('checked') 
 				|| $('#ans3').prop('checked') || $('#ans4').prop('checked')) {			
 
+				// increases count, initiating next question/answers //
 				$scope.count++
-				console.log($scope.isChecked)
+
+				// checks to see if answer is correct //
 				if ($scope.isChecked == 'true'){
+
+					// adds +1 to score and initiates a new random array to mix up next set of answers //
 					$scope.answerCount++;
 					$scope.answerArray = randomizer.randomArray(newArray);
-					console.log('thishappened');
 				}
-					
+				
+				// checks to see if all questions have been answered //	
 				else if ($scope.count > 9){
+
+					// stops game and shows score screen html and resets back to first question//
 					$scope.isGameTrue = false;
 					$scope.isScoreTrue = true;
 					$scope.count = 0;
 				}
 
+				// uses jquery to set all radio buttons to unchecked state //
 				$('#ans1').prop('checked', false);
 				$('#ans2').prop('checked', false);
 				$('#ans3').prop('checked', false);
 				$('#ans4').prop('checked', false);
-
-				console.log($scope.isChecked)
-				console.log($scope.answerCount)
-
 			}		
 		}
 
+		// function executes when user chooses to restart the trivia game //
 		$scope.restartGame = function(){
 
+			// hides score screen html and shows title screen to re-initiate game, also resets answer counter //
 			$scope.isTitleTrue = false;
 			$scope.isScoreTrue = false;
 			$scope.answerCount = 0;
@@ -84,7 +103,7 @@ angular.module('RouteControllers', [])
 		}
 
 
-	    //Questions made using IMDB trivia page as reference
+	    // Questions made using IMDB trivia page as reference //
 	    $scope.QA = {
 			questions: [
 			//	1ST QUESTION //
@@ -109,7 +128,7 @@ angular.module('RouteControllers', [])
 				"What is not a past profession of Bubbles?",
 			],
 
-
+			// each answer set stored as an array of 4 objects to also track which one is correct //
 			answers:[
 				//	1ST ANSWERS //
 				[{ans: "Ricky will wear the same shirt through the whole season", isCorrect: true},
