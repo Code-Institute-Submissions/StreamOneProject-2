@@ -1,276 +1,205 @@
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-CSS style sheet for Trailer Park Boys Fane Page
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$ CSS style sheet for Trailer Park Boys Fane Page $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-Global Settings and classes
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
-* {	/* Sets font settings for whole website*/
-	color: rgb(214, 29, 29); /* color taken by comparing TPBlogo.png to color scale */
-	font-family: Impact, Charcoal, sans-serif;  /*traditional font used by TPB*/
-	text-shadow: 0 0.03em white, -0.03em 0 white, 0 -0.03em white, 0.03em 0 white; /*adds background effect similar to TPBboys logo*/
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Global Settings and classes $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ * {
+    /* Sets font settings for whole website*/
+     color: rgb(214, 29, 29);
+    /* color taken by comparing TPBlogo.png to color scale */
+     font-family: Impact, Charcoal, sans-serif;
+    /*traditional font used by TPB*/
+     text-shadow: 0 0.03em white, -0.03em 0 white, 0 -0.03em white, 0.03em 0 white;
+    /*adds background effect similar to TPBboys logo*/
 }
-
-.topPadding {	/* Sets padding between inputs on form*/
-
-	margin-top: 15px;
+ .topPadding {
+    /* Sets padding between inputs on form*/
+     margin-top: 15px;
 }
-
-.leftPadding {
-
-	padding-left: 10px;
-	margin-left: 10px;
+ .leftPadding {
+     padding-left: 10px;
+     margin-left: 10px;
 }
-
-.labelStyling {	/*Sets font settings for fan mail Labels*/
-
-	color: floralwhite;
-	font-size: 1.25em;
-	font-family: Arial;
-	font-style: none;
-	text-shadow: none;
-	background-color: rgb(214, 29, 29); /*Color matched from TPB logo*/
+ .labelStyling {
+    /*Sets font settings for fan mail Labels*/
+     color: floralwhite;
+     font-size: 1.25em;
+     font-family: Arial;
+     font-style: none;
+     text-shadow: none;
+     background-color: rgb(214, 29, 29);
+    /*Color matched from TPB logo*/
 }
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-MOBILE SETTINGS
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/ 
-
-@media screen and (max-width: 1560px) {
-	iframe {
-		display: none;
-	} 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MOBILE SETTINGS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ @media screen and (max-width: 1560px) {
+     iframe {
+         display: none;
+    }
 }
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-NAVBAR and BACKGROUND STYLING
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/ 
-
-html, body {
-
-	/* Sets base height for background image */
-	height: 100%;
-
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ NAVBAR and BACKGROUND STYLING $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ html, body {
+    /* Sets base height for background image */
+     height: 100%;
 }
-
-.siteBackground { /* Sets the background color that will alter the background image using opacity*/
-
-	background-color: grey;
-	position: relative;
-	overflow: auto;
+ .siteBackground {
+    /* Sets the background color that will alter the background image using opacity*/
+     background-color: grey;
+     position: relative;
+     overflow: auto;
 }
-
-.siteBackground::before { /* Learned through online tutorial on how to make background image opaque*/
-
-    content: ' ';
-    position: fixed;
+ .siteBackground::before {
+    /* Learned through online tutorial on how to make background image opaque*/
+     content: ' ';
+     position: fixed;
     /*positioning*/
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /*Set index level lower than the rest of the site*/
-    opacity: 0.60;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+    /*Set index level lower than the rest of the site*/
+     opacity: 0.60;
     /* Background image taken from Youtube (https://www.youtube.com/watch?v=1bhC0cbmre4) screenshot of opening credits */
-    background: url('images/TPBbackground.png') repeat-y;     
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+     background: url('images/TPBbackground.png') repeat-y;
+     background-position: 50% 0;
+     -ms-background-size: cover;
+     -o-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
 }
-
-.navbarPadding { /* Sets padding from Navbar*/
-
-	padding: 70px 0 50px 0;
+ .navbarPadding {
+    /* Sets padding from Navbar*/
+     padding: 70px 0 50px 0;
 }
-
-.TPBlogo { 	/*Changes image properties for top left logo on navbar*/ 
-
-	width: 300px;
+ .TPBlogo {
+    /*Changes image properties for top left logo on navbar*/
+     width: 300px;
 }
-
-.TPBnavbar { /*Styling for nav items in top right navbar*/
-
-	color: rgb(214, 29, 29); /*Red similar to trailer park boys logo*/
-	font-size: 1.87em;
+ .TPBnavbar {
+    /*Styling for nav items in top right navbar*/
+     color: rgb(214, 29, 29);
+    /*Red similar to trailer park boys logo*/
+     font-size: 1.87em;
 }
-
-.TPBbackground { /*Positioning and styling of Home.html title*/
-
-	font-size: 2.19em;
-	text-align: center;
-
-	/*container background*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	width: 1000px;
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-	margin: 40px 0 10px 0;
-
+ .TPBbackground {
+    /*Positioning and styling of Home.html title*/
+     font-size: 2.19em;
+     text-align: center;
+    /*container background*/
+     background-color: #343a40;
+    /*color taken from inspecting bootstrap css*/
+     width: 1000px;
+     border: 2px solid FloralWhite;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 40px 0 10px 0;
 }
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-HOMEPAGE STYLING
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
-
-.homeLinks {	/*overrides default sites font size and background*/
-
-	/*font settings*/
-	font-size: 2.19em;
-	color: rgb(214, 29, 29); /* color taken by comparing TPBlogo.png to color scale */
-
-	/*container background*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	width: 600px;
-	height: 80px;
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-	margin: 45px 0 10px 0;
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ HOMEPAGE STYLING $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ .homeLinks {
+    /*overrides default sites font size and background*/
+    /*font settings*/
+     font-size: 2.19em;
+     color: rgb(214, 29, 29);
+    /* color taken by comparing TPBlogo.png to color scale */
+    /*container background*/
+     background-color: #343a40;
+    /*color taken from inspecting bootstrap css*/
+     width: 600px;
+     height: 80px;
+     border: 2px solid FloralWhite;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 45px 0 10px 0;
 }
-
-.footerPadding { /* Padding for social media icons*/
-
-	margin: 20px 0 0 60px;
+ .footerPadding {
+    /* Padding for social media icons*/
+     margin: 20px 0 0 60px;
 }
-
-.footerBackground { /*creates smaller background and font for footer title*/
-		
-	/*font settings*/
-	font-size: 1.5em;
-
-	/*container background*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	width: 250px;
-	height: 60px;
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-	margin: 30px 0 0 200px;
+ .footerBackground {
+    /*creates smaller background and font for footer title*/
+    /*font settings*/
+     font-size: 1.5em;
+    /*container background*/
+     background-color: #343a40;
+    /*color taken from inspecting bootstrap css*/
+     width: 250px;
+     height: 60px;
+     border: 2px solid FloralWhite;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 30px 0 0 200px;
 }
-
-.iconPadding {  /* Padding for social media icons*/
-
-	margin-top: 20px;
-	padding: 0 30px;
+ .iconPadding {
+    /* Padding for social media icons*/
+     margin-top: 20px;
+     padding: 0 30px;
 }
-
-#video1Position { /*sets position of left side video*/
-
-	position: absolute;
-	left: 25px;
-	top: 275px;
+ #video1Position {
+    /*sets position of left side video*/
+     position: absolute;
+     left: 25px;
+     top: 275px;
 }
-
-#video2Position { /*sets position of left side video*/
-
-	position: absolute;
-	right: 25px;
-	top: 275px;
+ #video2Position {
+    /*sets position of left side video*/
+     position: absolute;
+     right: 25px;
+     top: 275px;
 }
-
-
-
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-TRIVIA STYLING
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
-
-.centerTitle {
-
-	/* sets position of trivia titles*/
-	margin-top: 20%;
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ TRIVIA STYLING $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ .centerTitle {
+    /* sets position of trivia titles*/
+     margin-top: 20%;
 }
-
-.questionBackground {
-
-	/* most settings copied from homepageTitle*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px 0 0 40px;
-	margin-top: 70px;
-
-	/* sets background box size*/
-	width: 800px;
-	height: 300px;
+ .questionBackground {
+    /* most settings copied from homepageTitle*/
+     background-color: #343a40;
+    /*color taken from inspecting bootstrap css*/
+     border: 2px solid FloralWhite;
+     border-radius: 10px;
+     padding: 10px 0 0 40px;
+     margin-top: 70px;
+    /* sets background box size*/
+     width: 800px;
+     height: 300px;
 }
-
-.radioStyle {
-
-	/*sets font size and takes away shadow for options*/
-	font-size: 1.37em;
-	text-shadow: none;
-	font-style: normal;
-
-	/*separates options a little*/
-	margin: 20px 0 40px 30px;
-
+ .radioStyle {
+    /*sets font size and takes away shadow for options*/
+     font-size: 1.37em;
+     text-shadow: none;
+     font-style: normal;
+    /*separates options a little*/
+     margin: 20px 0 40px 30px;
 }
-
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-UPCOMING TOURS STYLING
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
-
-.ticketsBackground {
-
-	/*most settings copied from homepageTitle*/
-	background-color: #343a40;/*color taken from inspecting bootstrap css*/
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-
-	/* sets background box size*/
-	width: 500px;
-	height: 80px;
-
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ UPCOMING TOURS STYLING $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ .ticketsBackground {
+    /*most settings copied from homepageTitle*/
+     background-color: #343a40;
+    /*color taken from inspecting bootstrap css*/
+     border: 2px solid FloralWhite;
+     border-radius: 10px;
+     padding: 10px;
+    /* sets background box size*/
+     width: 500px;
+     height: 80px;
 }
-
-
-/*
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-FAN MAIL STYLING
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-*/
-
-
-.fanmailBox { /* Sets background settings for fan mail Labels*/
-
-	/*most settings copied from homepageTitle*/
-	background-color: #343a40; /*color taken from inspecting bootstrap css*/
-	border: 2px solid FloralWhite;
-	border-radius: 10px;
-	padding: 10px;
-
-	/* sets background box size*/
-	width: 100px;
-	height: 35px;
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ FAN MAIL STYLING $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+ .fanmailBox {
+    /* Sets background settings for fan mail Labels*/
+    /*most settings copied from homepageTitle*/
+     background-color: #343a40;
+    /*color taken from inspecting bootstrap css*/
+     border: 2px solid FloralWhite;
+     border-radius: 10px;
+     padding: 10px;
+    /* sets background box size*/
+     width: 100px;
+     height: 35px;
 }
-
-
-.dropdownFont { /* Changes text style in dropdown and placeholders*/
-	
-	color: black;
-	font-size: 1.25em;
-	font-family: Arial;
-	font-style: none;
-	text-shadow: none;
+ .dropdownFont {
+    /* Changes text style in dropdown and placeholders*/
+     color: black;
+     font-size: 1.25em;
+     font-family: Arial;
+     font-style: none;
+     text-shadow: none;
 }
+ 

@@ -1,72 +1,57 @@
 <!-- 
-Fan Mail page for TPB Fan Page
--->
-
+   Fan Mail page for TPB Fan Page
+   -->
 <div class="container">
-	<div class="d-flex justify-content-center">
-		<div class="TPBbackground">   <!-- Title Block -->
-			Have &nbsp something &nbsp you &nbsp want &nbsp to &nbsp say &nbsp to &nbsp the &nbsp boys &nbsp ( Or &nbsp Girls! )?
-			<br>
-			Fill &nbsp out &nbsp the &nbsp form &nbsp below &nbsp and &nbsp let &nbsp them &nbsp know!
-		</div>
-	</div>
-
-	<form>	<!-- bootstrap form and input classes to structure form-->
-
-		 <!-- Input for Name -->
-		<div class="form-inline topPadding">
-			<label for="name" class="fanmailBox labelStyling">Name:</label>
-			<input type="text" autofocus placeholder="Name" class="form-control dropdownFont leftPadding" id="nameInput" required>
-		</div>
-
-		 <!-- Input for Email -->
-		<div class="form-inline topPadding">
-			<label for="email" class="fanmailBox labelStyling">Email:</label>
-			<input type="email" placeholder="Email" class="form-control dropdownFont leftPadding" id="emailInput" required>
-		</div>
-
-		<!-- Input for Addressee-->
-		<div class="form-inline topPadding"> 
-			<label for="toWho" class="fanmailBox labelStyling">To:</label>	
-			<!-- Select menu made using angular directive ng-options-->
-			<select class="form-control dropdownFont leftPadding" id="toWho" name="toWho" 
-				ng-init="tpbName = names[0]" data-ng-model="tpbName" ng-options="name for name in names" required></select>
-		</div>
-
-		<!-- Input for message block-->
-		<div class="form-inline topPadding"> 
-			<label for="message" class="fanmailBox labelStyling">Message:</label>
-			<textarea placeholder="Enter Message" class="form-control dropdownFont topPadding" rows="10" cols="200" id="messageInput" required></textarea>
-		</div>
-
-		<button type="submit" class="btn btn-lg mb-2 labelStyling topPadding" ng-click="launchModal()">Submit</button>
-
-		<!-- Alerts /w bootstrap modal that the chosen TPB has recieved their message // no link to external server -->
-		<div id="tpbModal" class="modal fade" role="dialog">
-		  <div class="modal-dialog modal-dialog-centered modal-sm">
-
-		    <div class="modal-content">
-
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal"></button>
-		        <h2 class="modal-title">Message Sent!</h2>
-		      </div>
-
-		      <div class="modal-body">
-		      	<!-- Name taken from selected item in Input for Addressee menu -->
-		        <p>We will pass on your message to {{tpbName}}!</p>
-		      </div>
-
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-
-		    </div>
-
-		  </div>
-		</div>
-
-
-
-	</form>
+   <div class="d-flex justify-content-center">
+      <div class="TPBbackground">
+         <!-- Title Block -->
+         Have &nbsp something &nbsp you &nbsp want &nbsp to &nbsp say &nbsp to &nbsp the &nbsp boys &nbsp ( Or &nbsp Girls! )?
+         <br>
+         Fill &nbsp out &nbsp the &nbsp form &nbsp below &nbsp and &nbsp let &nbsp them &nbsp know!
+      </div>
+   </div>
+   <form>
+      <!-- bootstrap form and input classes to structure form-->
+      <!-- Input for Name -->
+      <div class="form-inline topPadding">
+         <label for="name" class="fanmailBox labelStyling">Name:</label>
+         <input type="text" autofocus placeholder="Name" class="form-control dropdownFont leftPadding" id="nameInput" required>
+      </div>
+      <!-- Input for Email -->
+      <div class="form-inline topPadding">
+         <label for="email" class="fanmailBox labelStyling">Email:</label>
+         <input type="email" placeholder="Email" class="form-control dropdownFont leftPadding" id="emailInput" required>
+      </div>
+      <!-- Input for Addressee-->
+      <div class="form-inline topPadding">
+         <label for="toWho" class="fanmailBox labelStyling">To:</label>	
+         <!-- Select menu made using angular directive ng-options-->
+         <select class="form-control dropdownFont leftPadding" id="toWho" name="toWho" 
+            ng-init="tpbName = names[0]" data-ng-model="tpbName" ng-options="name for name in names" required></select>
+      </div>
+      <!-- Input for message block-->
+      <div class="form-inline topPadding"> 
+         <label for="message" class="fanmailBox labelStyling">Message:</label>
+         <textarea placeholder="Enter Message" class="form-control dropdownFont topPadding" rows="10" cols="200" id="messageInput" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-lg mb-2 labelStyling topPadding" ng-click="launchModal()">Submit</button>
+      <!-- Alerts /w bootstrap modal that the chosen TPB has recieved their message // no link to external server -->
+      <div id="tpbModal" class="modal fade" role="dialog">
+         <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"></button>
+                  <h2 class="modal-title">Message Sent!</h2>
+               </div>
+               <div class="modal-body">
+                  <!-- Name taken from selected item in Input for Addressee menu -->
+                  <p>We will pass on your message to {{tpbName}}!</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
 </div>

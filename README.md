@@ -12,7 +12,9 @@ Visitors can check on upcoming TPB tours, send a message to a member of the cast
  
 ### How does it work
  
-This page uses Angular JS framework to construct the DOM. Angular controllers are used to store interactive functions for a Fan Mail Modal and Trivia game. Answers template were inserted into a directive and called on through the controller with unique ID's. The site is styled with Bootstrap.
+This page uses Angular JS framework to construct the DOM. Angular controllers are used to store interactive functions for a Fan Mail Modal and Trivia game. 
+
+Trivia: An array of answers is stored in the controller and called on from a directive, then passed through on an html page. When an answer is chosen and submitted, a counter initiates the next set of answers and questions. When the user gets an answer correct, the array of answers is randomized to prevent the correct answer becoming fixed on a single radio button.
  
 ## Features
  
@@ -38,6 +40,11 @@ This page uses Angular JS framework to construct the DOM. Angular controllers ar
     - **npm** used to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
     - **Bower** used to manage the installation of libraries and frameworks
+- [CSS Formatter](https://www.cleancss.com/css-beautify/)
+    - **CSS Formatter** used to prettify CSS code
+- [HTML Formatter](https://www.freeformatter.com/html-formatter.html)
+    - **HTML Formatter** used to prettify HTML code
+
  
 ## Contributing
  
