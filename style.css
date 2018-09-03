@@ -39,6 +39,18 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+MOBILE SETTINGS
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/ 
+
+@media screen and (max-width: 1560px) {
+	iframe {
+		display: none;
+	} 
+}
+
+/*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 NAVBAR and BACKGROUND STYLING
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */ 
@@ -54,7 +66,7 @@ html, body {
 
 	background-color: grey;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden; /*find a way around this*/
 }
 .siteBackground::before { /* Learned through online tutorial on how to make background image opaque*/
 
