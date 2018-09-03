@@ -72,7 +72,7 @@ html, body {
 .siteBackground::before { /* Learned through online tutorial on how to make background image opaque*/
 
     content: ' ';
-    position: absolute;
+    position: fixed;
     /*positioning*/
     left: 0;
     top: 0;
@@ -81,7 +81,7 @@ html, body {
     z-index: -1; /*Set index level lower than the rest of the site*/
     opacity: 0.60;
     /* Background image taken from Youtube (https://www.youtube.com/watch?v=1bhC0cbmre4) screenshot of opening credits */
-    background: url('images/TPBbackground.png') repeat;     
+    background: url('images/TPBbackground.png') repeat-y;     
     background-position: 50% 0;
     -ms-background-size: cover;
     -o-background-size: cover;
