@@ -6,7 +6,7 @@ Trivia page for TPB Fan Page
 <div class="container" ng-hide="isTitleTrue">
 	<div class="d-flex justify-content-center">
 		<div class="TPBbackground centerTitle" ng-click="launchTrivia()">
-			Click here to begin the Trailer Park Boys Trivia Challenge!
+			Click here to begin the 10 question Trailer Park Boys Trivia Challenge!
 		</div>
 	</div>
 </div>
@@ -27,7 +27,7 @@ Trivia page for TPB Fan Page
 	<div class="d-flex justify-content-center">
 	<!-- passes through question from controller-->
 		<div class="TPBbackground">
-			{{QA.questions[count]}}
+			{{count+1}}. {{QA.questions[count]}}
 		</div>
 	</div>
 
