@@ -1,0 +1,31 @@
+ 
+ /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Style Overrides $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* Overrides link default style on homepage*/
+ div span {
+     margin-bottom: 60px;
+     font-size: 2.81em !important;
+}
+ div a:hover {
+     text-decoration: none;
+}
+/* Overrides links and table styles on tours page */
+/* targets the links and overrides default style settings */
+ div div div a {
+     text-decoration: none;
+     color: rgb(214, 29, 29);
+     font-size: 2.5em;
+}
+ div div div a:hover {
+     text-decoration: none;
+}
+/* targets text in titles and changes font size*/
+ div div table thead tr th {
+     font-size: 1.75em;
+}
+/* targets text in body of table and changes font size and style*/
+ div div table tbody tr td {
+     font-size: 1.12em;
+     text-shadow: none;
+}
+ 
