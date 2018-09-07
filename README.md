@@ -15,7 +15,13 @@ Visitors can check on upcoming TPB tours, send a message to a member of the cast
 This page uses Angular JS framework to construct the DOM. Angular controllers are used to store interactive functions for a Fan Mail Modal and Trivia game. 
 
 Trivia: An array of answers is stored in the controller and called on from a directive, then passed through on an html page. When an answer is chosen and submitted, a counter initiates the next set of answers and questions. When the user gets an answer correct, the array of answers is randomized to prevent the correct answer becoming fixed on a single radio button.
- 
+
+### Testing
+
+- Tested that the array index randomizer worked correctly using jasmine
+- Other methods include simple trial and error, and utilizing console logs to check for expected results
+- Much time was spent building understanding of the DOM and how everything connects in Angular JS
+
 ## Features
  
 ### Existing Features
@@ -43,7 +49,9 @@ Trivia: An array of answers is stored in the controller and called on from a dir
 - [CSS Formatter](https://www.cleancss.com/css-beautify/)
     - **CSS Formatter** used to prettify CSS code
 - [HTML Formatter](https://www.freeformatter.com/html-formatter.html)
-    - **HTML Formatter** used to prettify HTML code
+    - **HTML Formatter** used to prettify HTML 
+- [Netlify](https://www.netlify.com/)
+    - **Site Host** used to host fan page
 
  
 ## Contributing
